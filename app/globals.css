@@ -1,0 +1,37 @@
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body { margin: 0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; color: #0f172a; background: #f8fafc; }
+
+.container { max-width: 1100px; margin: 0 auto; padding: 24px; }
+.header { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.header h1 { margin: 0; font-size: 24px; }
+.tag { color: #475569; margin: 0; }
+.main { margin-top: 16px; }
+.footer { margin-top: 40px; color: #64748b; font-size: 12px; text-align: center; }
+
+.tabs { display: flex; gap: 8px; flex-wrap: wrap; border-bottom: 1px solid #e2e8f0; padding-bottom: 8px; margin-bottom: 16px; }
+.tab { padding: 8px 12px; border-radius: 8px; cursor: pointer; background: #e2e8f0; color: #0f172a; border: 1px solid transparent; }
+.tab.active { background: #0ea5e9; color: white; }
+.tab:hover { border-color: #94a3b8; }
+
+.card { background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 16px; box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04); }
+.card h3 { margin-top: 0; }
+
+.row { display: flex; gap: 12px; align-items: stretch; flex-wrap: wrap; }
+.col { flex: 1 1 320px; }
+
+.input, textarea.input, select.input { width: 100%; padding: 10px 12px; border-radius: 8px; border: 1px solid #cbd5e1; background: #fff; color: #0f172a; }
+.textarea { min-height: 120px; }
+
+.button { display:inline-flex; align-items:center; gap:8px; background: #0ea5e9; color: white; border: none; padding: 10px 14px; border-radius: 8px; cursor: pointer; }
+.button.secondary { background: #475569; }
+.button.ghost { background: transparent; color: #0f172a; border: 1px solid #94a3b8; }
+.button:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.list { display: grid; gap: 8px; }
+.badge { display:inline-block; background:#e2e8f0; padding:4px 8px; border-radius:999px; font-size:12px; }
+.small { font-size: 12px; color: #475569; }
+
+.table { width: 100%; border-collapse: collapse; }
+.table th, .table td { border: 1px solid #e2e8f0; padding: 8px; text-align: left; }
+.table th { background: #f1f5f9; }
